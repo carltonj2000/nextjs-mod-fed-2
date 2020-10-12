@@ -1,5 +1,6 @@
 import Head from "next/head";
 import DogImage from "../components/DogImage";
+import DogCaptionRemote from "../components/DogCaptionRemote";
 
 export default function Home() {
   return (
@@ -9,8 +10,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div>This dog is really cute!</div>
+      <div>Host</div>
       <DogImage />
+      <DogCaptionRemote name="Fredo" />
     </div>
   );
 }

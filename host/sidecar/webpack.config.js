@@ -35,6 +35,9 @@ module.exports = {
       exposes: {
         "./DogImage": "../components/DogImage",
       },
+      remotes: {
+        peer: "peer",
+      },
       shared: require("../package.json").dependencies,
     }),
   ],

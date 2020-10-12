@@ -29,12 +29,15 @@ module.exports = {
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: "app1",
-      library: { type: "var", name: "app1" },
+      name: "peer",
+      library: { type: "var", name: "peer" },
       filename: "remoteEntry.js",
-      exposes: {},
+      exposes: {
+        "./DogCaption": "./src/DogCaption",
+      },
       remotes: {
         host: "hostsidecar",
+        peer: "peer",
       },
       shared: require("./package.json").dependencies,
     }),

@@ -7,7 +7,7 @@ function DogImage() {
         style={{
           width: 500,
           height: 280,
-          border: "1em solid red",
+          border: "1em dotted green",
           padding: "1em",
         }}
         src="https://placedog.net/500/280?random"
